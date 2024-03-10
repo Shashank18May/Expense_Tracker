@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense_Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <img id="profile" />
+    <div id ="content">
+        <div class="wrapper">
+            <h2 id = "good">Account details</h2>
+            <img id="profile-Big" />
+            <h2 id = "name"></h2>
+            <h2 id = "email"></h2>
+        </div>
+    </div>
+    <main>
+        <header>
+            <div>
+                <h5>Total Balance</h5>
+                <span id = "balance">₹0.00</span>
+            </div>
+            <div>
+                <h5>Income</h5>
+                <span id="income">₹0.00</span>
+            </div>
+            <div>
+                <h5>Expense</h5>
+                <span id="expense">₹0.00</span>
+            </div>
+        </header>
+
+        <section id ="KaamH">
+            <h3>Transactions</h3>
+            <ul id="transcationList"></ul>
+            <div id="status"></div>
+        </section>
+
+        <section>
+            <h3>Add Transaction</h3>
+
+            <form id="transactionForm">
+                <div>
+                    <label for="type">
+                        <input type="checkbox" name="type" id="type"/>
+                        <div class="opt">
+                            <span>Expense</span>
+                            <span>Credit</span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required />
+                </div>
+                <div>
+                    <label for="amt">Amount</label>
+                    <input 
+                    type="number" 
+                    name="amt" 
+                    value="0" 
+                    min="0.01" 
+                    step="0.01"
+                    required
+                    /> 
+                </div>
+                <div>
+                    <label for="date">Date </label>
+                    <input type="date" name="date" required>
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+    <a href="login.html"><button type="submit" id="logOut" onclick="login.html">Log Out</button></a>
+</body>
+    <script defer type="module" src="script.js"></script>
+    <script defer type="module" src="updater.js"></script>
+</html>

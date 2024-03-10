@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    display: grid;
+    margin-top: 15%;
+    margin-bottom:5%;
+}
+
+button{
+    width: 40%;
+    padding: 10px;
+    color: #ffff;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin-top: 0%;
+    margin-left: 30%;   
+    margin-bottom: 2%;
+    height: 42px;
+    font-family: "Roboto" sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #3a3dbe;    
+}
+button:hover{
+    background: #1d20c3; 
+}
