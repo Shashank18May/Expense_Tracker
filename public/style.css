@@ -297,7 +297,7 @@ input#type:checked ~ .opt::before{
     width:100px;
     height: 33px;
     right:5%;
-    bottom: 3%;
+    bottom: relative;
     background-color: var(--main-color);
     color:var(--bg-color);
     font-size: 0.9rem;
