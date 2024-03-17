@@ -39,7 +39,7 @@ onAuthStateChanged(auth,(user) => {
     } 
     else {
       alert("Create Account & Login")
-      window.location.href = "/login.html"   
+      window.location.href = "public/login.html"   
     }
   })
   
